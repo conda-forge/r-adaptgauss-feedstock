@@ -1,5 +1,4 @@
 {% set version = "1.6" %}
-
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -20,7 +19,6 @@ build:
     - lib/R/lib/
     - lib/
 
-# Suggests: mclust, grid, foreach, dqrng, parallelDist, knitr (>= 1.12), rmarkdown (>= 0.9), reshape2, ggplot2
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
@@ -37,6 +35,7 @@ requirements:
     - r-base
     - r-datavisualizations
     - r-rcpp
+    - r-plotly
     - r-pracma
     - r-shiny
   run:
@@ -44,6 +43,7 @@ requirements:
     - {{ native }}gcc-libs         # [win]
     - r-datavisualizations
     - r-rcpp
+    - r-plotly
     - r-pracma
     - r-shiny
 
@@ -53,11 +53,10 @@ test:
     - "\"%R%\" -e \"library('AdaptGauss')\""  # [win]
 
 about:
-  home: https://www.uni-marburg.de/fb12/datenbionik/software-en
+  home:  https://www.deepbionics.org
   license: GPL-3.0-only
   summary: Multimodal distributions can be modelled as a mixture of components. The model is derived using the Pareto Density Estimation (PDE) for an estimation of the pdf. PDE has been designed in particular to identify groups/classes in a dataset. Precise limits for the classes can be calculated using the theorem of Bayes.
     Verification of the model is possible by QQ plot, Chi-squared test and Kolmogorov-Smirnov test. The package is based on the publication of Ultsch, A., Thrun, M.C., Hansen-Goos, O., Lotsch, J. (2015)  <DOI:10.3390/ijms161025897>.
-
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
@@ -67,7 +66,6 @@ extra:
     - conda-forge/r
 
 # The original CRAN metadata for this package was:
-
 # Package: AdaptGauss
 # Type: Package
 # Title: Gaussian Mixture Models (GMM)
@@ -91,7 +89,6 @@ extra:
 # Author: Michael Thrun [aut, cre] (<https://orcid.org/0000-0001-9542-5543>), Onno Hansen-Goos [aut, rev], Rabea Griese [ctr, ctb], Catharina Lippmann [ctr], Florian Lerch [ctb, rev], Jorn Lotsch [dtc, rev, fnd, ctb], Alfred Ultsch [aut, cph, ths]
 # Repository: CRAN
 # Date/Publication: 2020-02-03 10:00:08 UTC
-
 # See
 # https://docs.conda.io/projects/conda-build for
 # more information about meta.yaml
