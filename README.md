@@ -3,6 +3,7 @@ About r-adaptgauss-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-adaptgauss-feedstock/blob/main/LICENSE.txt)
 
+
 About r-adaptgauss
 ------------------
 
@@ -11,6 +12,7 @@ Home: https://www.uni-marburg.de/fb12/datenbionik/software-en
 Package license: GPL-3.0-only
 
 Summary: Multimodal distributions can be modelled as a mixture of components. The model is derived using the Pareto Density Estimation (PDE) for an estimation of the pdf. PDE has been designed in particular to identify groups/classes in a dataset. Precise limits for the classes can be calculated using the theorem of Bayes. Verification of the model is possible by QQ plot, Chi-squared test and Kolmogorov-Smirnov test. The package is based on the publication of Ultsch, A., Thrun, M.C., Hansen-Goos, O., Lotsch, J. (2015)  <DOI:10.3390/ijms161025897>.
+
 About r-adaptgauss
 ------------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
