@@ -7,7 +7,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-adaptgauss-fe
 About r-adaptgauss
 ------------------
 
-Home: https://www.uni-marburg.de/fb12/datenbionik/software-en
+Home: https://www.deepbionics.org
 
 Package license: GPL-3.0-only
 
@@ -16,7 +16,7 @@ Summary: Multimodal distributions can be modelled as a mixture of components. Th
 About r-adaptgauss
 ------------------
 
-Home: https://www.uni-marburg.de/fb12/datenbionik/software-en
+Home: https://www.deepbionics.org
 
 Package license: GPL-3.0-only
 
