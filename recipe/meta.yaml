@@ -1,4 +1,4 @@
-{% set version = '1.5.6' %}
+{% set version = "1.6" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/AdaptGauss_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/AdaptGauss/AdaptGauss_{{ version }}.tar.gz
-  sha256: b07773123f9c2f63ae83066b48a9ac866ef7dd24dae292e024d82b72b195d21c
+  sha256: 1fa7bd49ab471d76bd98dae3e038f7edfac2cfdec5a18648f8aec7b49dd88013
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -55,13 +55,8 @@ test:
 about:
   home: https://www.uni-marburg.de/fb12/datenbionik/software-en
   license: GPL-3.0-only
-  summary: Multimodal distributions can be modelled as a mixture of components. The model is
-    derived using the Pareto Density Estimation (PDE) for an estimation of the pdf.
-    PDE has been designed in particular to identify groups/classes in a dataset. Precise
-    limits for the classes can be calculated using the theorem of Bayes. Verification
-    of the model is possible by QQ plot, Chi-squared test and Kolmogorov-Smirnov test.
-    The package is based on the publication of Ultsch, A., Thrun, M.C., Hansen-Goos,
-    O., Lotsch, J. (2015)  <DOI:10.3390/ijms161025897>.
+  summary: Multimodal distributions can be modelled as a mixture of components. The model is derived using the Pareto Density Estimation (PDE) for an estimation of the pdf. PDE has been designed in particular to identify groups/classes in a dataset. Precise limits for the classes can be calculated using the theorem of Bayes.
+    Verification of the model is possible by QQ plot, Chi-squared test and Kolmogorov-Smirnov test. The package is based on the publication of Ultsch, A., Thrun, M.C., Hansen-Goos, O., Lotsch, J. (2015)  <DOI:10.3390/ijms161025897>.
 
   license_family: GPL3
   license_file:
